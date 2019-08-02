@@ -1,0 +1,90 @@
+{
+	"name": "WUSM  Hashing Identification",
+
+	"namespace": "WashingtonUniversity\\HashingIdentificationExternalModule",
+
+	"description": "Creates hash value for identification of records based upon persons name and birthdate for either International or United States (slight differences in hash method).  Includes capability for handling a prefix added to the record ID",
+
+  "authors": [
+      {
+          "name": "David L. Heskett",
+          "email": "davidheskett@wustl.edu",
+          "institution": "Washington University School of Medicine Institute for Informatics"
+      }
+  ],
+
+   "permissions": [
+      "redcap_add_edit_records_page",
+      "redcap_control_center"
+   ],
+
+   "links": {
+      "project": [
+      ],
+      "control-center": [
+      ]
+   },
+
+   "project-settings": [
+			{
+				"key": "project_using_hashing",
+				"name": "Project Using Hashing",
+				"type": "text"
+			},
+			{
+				"key": "custom_prefix",
+				"name": "Prefix to Record ID",
+				"type": "text"
+			},
+			{
+				"key": "field_first_name",
+				"name": "First Name Field",
+				"type": "text"
+			},
+			{
+				"key": "field_last_name",
+				"name": "Last Name Field",
+				"type": "text"
+			},
+			{
+				"key": "field_date_of_birth",
+				"name": "Date of Birth Field",
+				"type": "text"
+			},
+			{
+				"key": "field_year",
+				"name": "Year of Birth Field",
+				"type": "text"
+			},
+			{
+				"key": "location_flag_field",
+				"name": "Location Flag Field",
+				"type": "text"
+			},
+			{
+				"key": "hash_code_field",
+				"name": "Hash Code Field",
+				"type": "text"
+			},
+			{
+				"key": "instrument_to_use",
+				"name": "Instrument Name",
+				"type": "text"
+			},
+	    {
+	        "key": "debug_mode_log",
+	        "name": "Log Mode",
+	        "type": "checkbox"
+	    },
+			{
+				"key": "dags_listing_international",
+				"name": "International DAGs",
+				"type": "text",
+				"repeatable": "true"
+			}
+		],
+
+   "system-settings": [
+    ]
+
+}
