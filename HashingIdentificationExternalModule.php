@@ -1304,7 +1304,7 @@ function findAddRecButton()
 {
 	var foundButton;
 		
-	$('.data').find('button').filter(function(){if($(this).text() === "Add new record"){ foundButton = $(this); }});
+	$('.data').find('button').filter(function(){if($(this).text().trim() === "Add new record"){ foundButton = $(this); }});
 	
 	return foundButton;
 }
